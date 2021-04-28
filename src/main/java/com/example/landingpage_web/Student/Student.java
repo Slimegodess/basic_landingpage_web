@@ -3,6 +3,7 @@ package com.example.landingpage_web.Student;
 import java.time.LocalDate;
 
 public class Student {
+
     private Long id;
     private String name;
     private String email;
