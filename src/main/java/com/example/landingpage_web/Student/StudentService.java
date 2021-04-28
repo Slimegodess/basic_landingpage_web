@@ -1,7 +1,6 @@
 package com.example.landingpage_web.Student;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.time.LocalDate;
 import java.time.Month;
