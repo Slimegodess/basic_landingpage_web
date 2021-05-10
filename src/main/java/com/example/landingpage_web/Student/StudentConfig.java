@@ -16,25 +16,25 @@ public class StudentConfig {
     CommandLineRunner commandLineRunner(
             StudentRepository repository) {
         return args -> {
-            Student marie = new Student(
-                    "Marie",
-                    "Marie@htw.de",
+            Student Paul = new Student(
+                    "Paul",
+                    "Paul-Penny@gmail.com",
                     LocalDate.of(2000,JANUARY,5)
             );
 
-            Student barien = new Student(
-                    "ASAP",
-                    "asap@barie.de",
+            Student Oke = new Student(
+                    "Oke",
+                    "OkeOkeOke@gmail.com",
                     LocalDate.of(2002,FEBRUARY,7)
             );
 
-            Student carie = new Student(
-                    "Carie",
+            Student Marrie = new Student(
+                    "Marrie",
                     "Marrie_Miller@htw.de",
                     LocalDate.of(1999,JUNE,9)
             );
 
-            repository.saveAll(List.of(marie, barien, carie));
+            repository.saveAll(List.of(Marrie, Oke, Paul));
         };
     }
 }
