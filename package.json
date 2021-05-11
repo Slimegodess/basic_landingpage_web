@@ -1,0 +1,22 @@
+{
+  "name": "landingpage_web",
+  "version": "1.0.0",
+  "description": "collected photo and video edits",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slimegodess/basic_landingpage_web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Slimegodess/basic_landingpage_web/issues"
+  },
+  "homepage": "https://github.com/Slimegodess/basic_landingpage_web#readme"
+}
