@@ -1,12 +1,13 @@
 package com.example.landingpage_web.Student;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "api/v1/student")
+@RequestMapping(path = "api")
 public class StudentController {
 
     private final StudentService studentService;
@@ -37,6 +38,20 @@ public class StudentController {
             @RequestParam(required=false) String name,
             @RequestParam(required=false) String email) {
         studentService.updateStudent(studentId, name, email);
+    }
+
+    @PostMapping("/addstudent")
+    public String studentSubmit(@ModelAttribute Student student, Model model){
+        studentService.addNewStudent(student);
+        model.addAttribute("student",student);
+        return "studentresult";
+    }
+
+    @GetMapping("/liststudents")
+    public String studentsTable(Model model){
+        List<Student> students = studentService.findAll();
+        model.addAttribute("students", students);
+        return "studentstable";
     }
 
 }

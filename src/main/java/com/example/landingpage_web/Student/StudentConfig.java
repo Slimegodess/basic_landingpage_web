@@ -22,19 +22,13 @@ public class StudentConfig {
                     LocalDate.of(2000,JANUARY,5)
             );
 
-            Student Oke = new Student(
-                    "Oke",
-                    "OkeOkeOke@gmail.com",
-                    LocalDate.of(2002,FEBRUARY,7)
-            );
-
             Student Marrie = new Student(
                     "Marrie",
                     "Marrie_Miller@htw.de",
                     LocalDate.of(1999,JUNE,9)
             );
 
-            repository.saveAll(List.of(Marrie, Oke, Paul));
+            repository.saveAll(List.of(Marrie, Paul));
         };
     }
 }

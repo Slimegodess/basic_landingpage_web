@@ -1,0 +1,15 @@
+<!DOCTYPE html "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+  <title>Students</title>
+</head>
+<body>
+<h2>You added a Student!</h2>
+<p th:text="'name: ' + ${student.name}"></p>
+<p th:text="'email: ' + ${student.email}"></p>
+<p th:text="'dob: ' + ${student.dob}"></p>
+<a href="/studentlist">See all Students</a>
+</body>
+</html>
